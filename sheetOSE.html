@@ -1,0 +1,2347 @@
+<!-- Sheet v1.1 2015-08-29 -->
+<div class="sheet-mainBg" style="width:832px;">
+    <div class="sheet-2colrow">
+        <div class="sheet-col" style="text-align:center;">
+            <!--<img style="width:250px" src="https://lh3.googleusercontent.com/41Zo4hKvKDdOL59cl1pCPLziALvUrdMxZafqsujiHNot=w587-h65-no"/>-->
+            <img style="width:250px" src="https://i.imgur.com/BFdH4sX.png"/>
+            &copy;
+        </div>
+        <div class="sheet-col">
+            <div style="text-align:center;font-weight: bold;font-size: 16px;vertical-align: middle;">
+                <input class="sheet-is-npc" type="checkbox" name="attr_is_npc" value="1"><span class="sheet-is-pc-tab"></span>
+                CHARACTER RECORD SHEET
+            </div>
+        </div>
+    </div>
+    <div style="display: table;width:100%;">
+        <div style="display: table-row;">
+            <input class="sheet-is-npc" type="hidden" name="attr_is_npc">
+            <div class="sheet-pcinfo" style="width:50%;text-align:left;">
+                <input class="sheet-inMainTxt" type="text" name="attr_player_name" />
+                <div class="sheet-row sheet-libel1">
+                    Player's Name
+                </div>
+            </div>
+            <div style="display: table-cell;text-align:left;">
+                <input class="sheet-inMainTxt" type="text" name="attr_DM" />
+                <div class="sheet-row sheet-libel1">
+                    Dungeon Master
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-bbox">
+        <div style="display: table;width:100%;">
+        <div style="display: table-row;">
+            <div style="display: table-cell;width:60%;text-align:left;">
+                <input class="sheet-inMainTxt" type="text" name="attr_character_name" />
+                <div class="sheet-row sheet-libel1">
+                    Character's Name
+                </div>
+                <input class="sheet-is-npc" type="hidden" name="attr_is_npc">
+                <div class="sheet-pcinfo sheet-2colrow">
+                    <div class="sheet-col">
+                        <SELECT name="attr_Class" size="1"  style="width: 120px;">
+                            <OPTION></OPTION>
+                            <OPTION>Cleric</OPTION>
+                            <OPTION>Dwarf</OPTION>
+                            <OPTION>Elf</OPTION>
+                            <OPTION>Fighter</OPTION>
+                            <OPTION>Halfling</OPTION>
+                            <OPTION>Magic-User</OPTION>
+                            <OPTION>Thief</OPTION>
+                        </SELECT>
+                        <div class="sheet-row sheet-libel1">
+                            Class
+                        </div>
+                    </div>
+                    <div class="sheet-col">
+                        <input class="sheet-inMainTxt" type="text" name="attr_title" style="width:120px;"/>
+                        <div class="sheet-row sheet-libel1">
+                            Title
+                        </div>
+                    </div>
+                </div>
+                <div class="sheet-npcinfo sheet-2colrow">
+                    <div class="sheet-col">
+                        <SELECT name="attr_FightAs" size="1"  style="width: 120px;">
+                            <OPTION></OPTION>
+                            <OPTION>Monster</OPTION>
+                            <OPTION>Normal-Man</OPTION>
+                            <OPTION>Cleric</OPTION>
+                            <OPTION>Dwarf</OPTION>
+                            <OPTION>Elf</OPTION>
+                            <OPTION>Fighter</OPTION>
+                            <OPTION>Halfling</OPTION>
+                            <OPTION>Magic-User</OPTION>
+                            <OPTION>Thief</OPTION>
+                        </SELECT>
+                        <div class="sheet-row sheet-libel1">
+                            Fights As
+                        </div>
+                    </div>
+                    <div class="sheet-col">
+                        <SELECT name="attr_SaveAs" size="1"  style="width: 120px;">
+                            <OPTION></OPTION>
+                            <OPTION>Monster</OPTION>
+                            <OPTION>Normal-Man</OPTION>
+                            <OPTION>Cleric</OPTION>
+                            <OPTION>Dwarf</OPTION>
+                            <OPTION>Elf</OPTION>
+                            <OPTION>Fighter</OPTION>
+                            <OPTION>Halfling</OPTION>
+                            <OPTION>Magic-User</OPTION>
+                            <OPTION>Thief</OPTION>
+                        </SELECT>
+                        <div class="sheet-row sheet-libel1">
+                            Saves As
+                        </div>
+                    </div>
+                </div>
+                <div class="sheet-2colrow">
+                    <div class="sheet-col" style="text-align: center;">
+                        <input class="sheet-inCA" type="text" name="attr_AC" value="9"/>
+                        <div class="sheet-row sheet-libel1" style="text-align: center;">
+                            Armor Class
+                        </div>
+                    </div>
+                    <div class="sheet-col" style="text-align: center;">
+                        <div class="sheet-row">
+                            <input class="sheet-inPV" type="text" name="attr_HP" title="Current Hit Points" value="0"/>
+                            <input class="sheet-inPVMax" type="text" name="attr_HP_max" title="Maximum Hit Points" value="0"/>
+                        </div>
+                        <div class="sheet-row sheet-libel1">
+                            Hit Points
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- FIN nom, classe colonne 1 -->
+            <div style="display: table-cell;text-align:left;"> <!-- nom, classe colonne 2 -->
+                <SELECT name="attr_Alignment" size="1"  style="width: 120px;">
+                    <OPTION></OPTION>
+                    <OPTION>Lawful</OPTION>
+                    <OPTION>Neutral</OPTION>
+                    <OPTION>Chaotic</OPTION>
+                </SELECT>
+                <div class="sheet-row sheet-libel1">
+                    Alignment
+                </div>
+                <input class="sheet-is-npc" type="hidden" name="attr_is_npc">
+                <div class="sheet-pcinfo sheet-2colrow">
+                    <div class="sheet-col" style="width: 24px;">
+                        <div class="sheet-row">
+                            <input class="sheet-inMainNum" type="number" name="attr_Level" style="width: 40px;" value="1" />
+                        </div>
+                        <div class="sheet-row sheet-libel1">
+                            Level
+                        </div>
+                    </div>
+                    <div class="sheet-col" style="text-align: left;white-space: nowrap;">
+                        <input class="sheet-inMainNum" type="number" name="attr_XP" style="width: 65px;text-align:right;" title="Current Experience Points" value="0" />
+                        <b>/</b>
+                        <input class="sheet-inMainNum" type="number" name="attr_XP_max" style="width: 65px;text-align:right;" title="Experience Points needed for next level" value="0" />
+                        <div class="sheet-row sheet-libel1" style="white-space: nowrap;">
+                            XP / Next Level
+                        </div>
+                    </div>
+                </div>
+                <div class="sheet-npcinfo sheet-2colrow">
+                    <div class="sheet-col">
+                        <div class="sheet-row">
+                            <input class="sheet-inMainNum" type="number" name="attr_FightAsLevel" style="width: 100px;" value="1" />
+                        </div>
+                        <div class="sheet-row sheet-libel1">
+                            Fights Level
+                        </div>
+                    </div>
+                    <div class="sheet-col">
+                        <div class="sheet-row">
+                            <input class="sheet-inMainNum" type="number" name="attr_SaveAsLevel" style="width: 100px;" value="1" />
+                        </div>
+                        <div class="sheet-row sheet-libel1">
+                            Saves Level
+                        </div>
+                    </div>
+                </div>
+                <div class="sheet-pcinfo sheet-2colrow" style="text-align:left;">
+                    <div class="sheet-col">
+                        <SELECT name="attr_HD" size="1"  style="text-align: right; width: 60px;">
+                            <OPTION value="0"></OPTION>
+                            <OPTION value="4">d4</OPTION>
+                            <OPTION value="6">d6</OPTION>
+                            <OPTION value="8">d8</OPTION>
+                        </SELECT>
+                        <button type='roll' value="&{template:mold} {{name=Hit Dice}} {{HD=[[1d@{HD}+[[@{CON}]]]]}}" name='rollHD'></button>
+                        <div class="sheet-row sheet-libel1" style="text-align:left;">
+                            Hit Die
+                        </div>
+                    </div>
+                    <div class="sheet-col">
+                        <input class="sheet-inMainNum" type="text" name="attr_XPADJ" style="width: 50px;" value="0%" />
+                        <div class="sheet-row sheet-libel1" style="text-align:left;">
+                            XP Adj.
+                        </div>
+                    </div>
+                </div>
+                <div class="sheet-npcinfo sheet-2colrow" style="text-align:left;">
+                    <div class="sheet-col">
+                        <input class="sheet-inMainNum" type="text" name="attr_NPC_HD" style="width: 80px;" value="1d8" />
+                        <button type='roll' value="" name='emptyroll' class="sheet-carac-roll" style="visibility:hidden;"></button>
+                        <div class="sheet-row sheet-libel1" style="text-align:left;">
+                            Hit Dice
+                        </div>
+                    </div>
+                    <div class="sheet-col">
+                        <input class="sheet-inMainNum" type="text" name="attr_MORALE" style="width: 50px;" value="7" />
+                        <button type='roll'
+                         value="&{template:mold} {{name=Morale}} {{who=@{character_name}}} {{subtags=Combat Option}} {{morale=[[2d6+?{Modifier|0}]] }} {{target=[[@{MORALE}]] }} "
+                         name='moraleroll' class="sheet-carac-roll" title="Morale Check"></button>
+                        <div class="sheet-row sheet-libel1" style="text-align:left;">
+                            Morale
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- FIN nom, classe colonne 2 -->
+        </div>
+        </div>
+    </div>
+    <div class="sheet-bbox">
+        <div style="display: table; width:100%;"> <!-- TABLE carac & JS -->
+        <div style="display: table-row">
+            <div  class="sheet-titre1" style="width: 60%;">___ABILITIES:</div>
+            <div  class="sheet-titre1">___SAVING THROWS:</div>
+        </div>
+        <div style="display: table-row"> <!-- LIGNE carac & JS -->
+            <div style="display: table-cell; "> <!-- CELL carac  -->
+                <div style="display: table; text-align: left;"> <!-- CARAC -->
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_strength" type="text" class="sheet-attr-num" value="10" />
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Strength}} {{who=@{character_name}}} {{subtags=Stat Roll}} {{statroll=[[1d20-(?{Modifier|0})]] }} {{target=[[@{strength}]] }}"
+                             name='strroll' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            STRENGTH
+                        </div>
+                        <div class="sheet-carac-mod">
+                            <input name="attr_STR" type="number" class="sheet-carac-mod" title="" value="0" readonly/>
+                        </div>
+                        <div style="display: table-cell;">
+                            Melee Modifier
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_intelligence" type="text" class="sheet-attr-num" value="10" />
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Intelligence}} {{who=@{character_name}}} {{subtags=Stat Roll}} {{statroll=[[1d20-(?{Modifier|0})]] }} {{target=[[@{intelligence}]] }}"
+                             name='introll' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            INTELLIGENCE
+                        </div>
+                        <div class="sheet-carac-mod">
+                            <input name="attr_INT" type="number" class="sheet-carac-mod" value="0" readonly/>
+                            <input name="attr_INTLANG" type="hidden" class="sheet-carac-mod" value="Native" readonly/>
+                        </div>
+                        <div style="display: table-cell;">Bonus Lang. (<span name="attr_INTLANG"></span>)</div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_wisdom" type="text" class="sheet-attr-num" value="10" />
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Wisdom}} {{who=@{character_name}}} {{subtags=Stat Roll}} {{statroll=[[1d20-(?{Modifier|0})]] }} {{target=[[@{wisdom}]] }}"
+                             name='wisroll' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            WISDOM
+                        </div>
+                        <div class="sheet-carac-mod">
+                            <input name="attr_WIS" type="number" class="sheet-carac-mod" value="0" readonly/>
+                        </div>
+                        <div style="display: table-cell;">
+                            Magic-based Saving Throws
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_dexterity" type="text" class="sheet-attr-num" value="10" />
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Dexterity}} {{who=@{character_name}}} {{subtags=Stat Roll}} {{statroll=[[1d20-(?{Modifier|0})]] }} {{target=[[@{dexterity}]] }}"
+                             name='dexroll' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            DEXTERITY
+                        </div>
+                        <div class="sheet-carac-mod">
+                            <input name="attr_DEX" type="number" class="sheet-carac-mod" value="0" readonly/>
+                            <input name="attr_INIT" type="hidden" class="sheet-carac-mod" value="0" readonly/>
+                        </div>
+                        <div style="display: table-cell;">
+                            AC / Missile Modifier
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_constitution" type="text" class="sheet-attr-num" value="10" />
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Constitution}} {{who=@{character_name}}} {{subtags=Stat Roll}} {{statroll=[[1d20-(?{Modifier|0})]] }} {{target=[[@{constitution}]]}}"
+                             name='conroll' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            CONSTITUTION
+                        </div>
+                        <div class="sheet-carac-mod">
+                            <input name="attr_CON" type="number" class="sheet-carac-mod" value="0" readonly/>
+                        </div>
+                        <div style="display: table-cell;">Hit Point Adjustment</div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_charisma" type="text" class="sheet-attr-num" value="10" />
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Charisma}} {{who=@{character_name}}} {{subtags=Stat Roll}} {{statroll=[[1d20-(?{Modifier|0})]] }} {{target=[[@{charisma}]] }}"
+                             name='charoll' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            CHARISMA
+                        </div>
+                        <div class="sheet-carac-mod">
+                            <input name="attr_CHA" type="number" class="sheet-carac-mod" value="0" readonly/>
+                            <input name="attr_CHALOYAL" type="hidden" class="sheet-carac-mod" value="0" readonly/>
+                        </div>
+                        <div style="display: table-cell;">
+                            Reaction
+                            <button type='roll'
+                             value="&{template:mold} {{name=Reaction}} {{who=@{character_name}}} {{subtags=Stat Action}} {{reaction=[[2d6+[[@{CHA}]]+?{Modifier|0}]] }} "
+                             name='reacroll' class="sheet-carac-roll" title="Monster Reaction Roll"></button>
+                            <button type='roll'
+                             value="&{template:mold} {{name=Hiring}} {{who=@{character_name}}} {{subtags=Stat Action}} {{hiring=[[2d6+[[@{CHA}]]+?{Modifier|0}]] }} "
+                             name='hireroll' class="sheet-carac-roll" title="Retainer Hiring Reaction"></button>
+                            <button type='roll'
+                             value="&{template:mold} {{name=Loyalty to @{target|Employer|character_name}}} {{who=@{character_name}}} {{subtags=Stat Action}} {{loyalty=[[2d6+?{Modifier|0}]] }} {{target=[[@{target|Employer|CHALOYAL}]] }} "
+                             name='loyaltyroll' class="sheet-carac-roll" title="Retainer Loyalty Check"></button>
+                        </div>
+                    </div>
+                </div> <!-- FIN CARACS -->
+            </div> <!-- FIN CELL carac -->
+            <div style="display: table-cell"> <!-- CELL JS -->
+                <div style="display: table; text-align: left;"> <!-- JS -->
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_ST_Poison" type="text" class="sheet-save-num" value='10' readonly/>
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Death or Poison}} {{who=@{character_name}}} {{subtags=Saving Throw}} {{saveroll=[[1d20+?{Modifier|0}]] }} {{target=[[@{ST_Poison}]] }}"
+                             name='save_death' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            DEATH or POISON
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_ST_Wand" type="text" class="sheet-save-num" value='10' readonly/>
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Magic Wands}} {{who=@{character_name}}} {{subtags=Saving Throw}} {{saveroll=[[1d20+?{Modifier|0}]] }} {{target=[[@{ST_Wand}]] }}"
+                             name='save_wand' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            MAGIC WANDS
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_ST_Stone" type="text" class="sheet-save-num" value='10' readonly/>
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Paralysis or Petrification}} {{who=@{character_name}}} {{subtags=Saving Throw}} {{saveroll=[[1d20+?{Modifier|0} ]] }} {{target=[[@{ST_Stone}]] }}"
+                             name='save_petrify' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            PARALYSIS or PETRIFICATION
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_ST_Breath" type="text" class="sheet-save-num" value='10' readonly/>
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Breath Attacks}} {{who=@{character_name}}} {{subtags=Saving Throw}} {{saveroll=[[1d20+?{Modifier|0} ]] }} {{target=[[@{ST_Breath}]] }}"
+                             name='save_breath' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            BREATH ATTACKS
+                        </div>
+                    </div>
+                    <div  style="display: table-row;">
+                        <div class="sheet-carac-num">
+                            <input name="attr_ST_Spell" type="text" class="sheet-save-num" value='10' readonly/>
+                        </div>
+                        <div class="sheet-carac-roll">
+                            <button type='roll'
+                            value="&{template:mold} {{name=Spells, Rods or Staves}} {{who=@{character_name}}} {{subtags=Saving Throw}} {{saveroll=[[1d20+?{Modifier|0} ]] }} {{target=[[@{ST_Spell}]] }}"
+                             name='save_spell' class="sheet-carac-roll"></button>
+                        </div>
+                        <div class="sheet-carac-lib">
+                            SPELLS, RODS or STAVES
+                        </div>
+                    </div>
+                </div> <!-- FIN JS et + -->
+                <div style="display: table; text-align: left;margin-top:4px;">
+                </div>
+            </div> <!-- FIN CELL JS -->
+        </div> <!-- FIN LIGNE carac & JS -->
+    </div> <!-- TABLE carac & JS -->
+    </div>
+    <div class="sheet-bbox">
+        <div style="width: 100%;text-align:center;"> <!-- TABLE CA -->
+        <div style="display: table; width:100%;">
+            <div style="display: table-row;text-align: center;">
+                <div style="display: table-cell; text-align: right;width:100%;"><b>AC :</b></div>
+                <div style="display: table-cell;text-align: center;">9</div>
+                <div style="display: table-cell;text-align: center;">8</div>
+                <div style="display: table-cell;text-align: center;">7</div>
+                <div style="display: table-cell;text-align: center;">6</div>
+                <div style="display: table-cell;text-align: center;">5</div>
+                <div style="display: table-cell;text-align: center;">4</div>
+                <div style="display: table-cell;text-align: center;">3</div>
+                <div style="display: table-cell;text-align: center;">2</div>
+                <div style="display: table-cell;text-align: center;">1</div>
+                <div style="display: table-cell;text-align: center;">0</div>
+            </div>
+            <div style="display: table-row;text-align: center;">
+                <div style="display: table-cell; text-align: center;width:100%;"><b>“TO HIT” ROLL NEEDED</b></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA9" class="sheet-inPetitNum" value="@{ToucheCA0}-9" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA8" class="sheet-inPetitNum" value="@{ToucheCA0}-8" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA7" class="sheet-inPetitNum" value="@{ToucheCA0}-7" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA6" class="sheet-inPetitNum" value="@{ToucheCA0}-6" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA5" class="sheet-inPetitNum" value="@{ToucheCA0}-5" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA4" class="sheet-inPetitNum" value="@{ToucheCA0}-4" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA3" class="sheet-inPetitNum" value="@{ToucheCA0}-3" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA2" class="sheet-inPetitNum" value="@{ToucheCA0}-2" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA1" class="sheet-inPetitNum" value="@{ToucheCA0}-1" disabled=1/></div>
+                <div style="display: table-cell;"><input type="number" name="attr_ToucheCA0" class="sheet-inPetitNum" value='19' readonly/></div>
+            </div>
+        </div>
+        </div> <!-- FIN TABLE CA -->
+    </div>
+    <div class="sheet-bbox">
+        <div style="display: table; width: 100%; text-align:left;"> <!-- Attaques -->
+        <div style="display: table-row; width:inherit;">
+            <div style="display: table-cell;width:inherit;">
+                <div  class="sheet-titre1">___ATTACKS:</div>
+            </div>
+        </div>
+        <fieldset class="repeating_attaques">
+            <div style="display: table-row;">
+                <div style="display: table-cell; text-align: center;width: 45px;">
+                    <button type='roll' name="AtkRoll"
+                        value="&{template:mold} {{name=@{atk_name}}} {{who=@{character_name}}} {{subtags=Attack (THAC0:@{ToucheCA0})}} {{attack=[[1d20cs20cf1+[[@{atk_stat}]]+@{atk_mod}]]}} {{damage=[[@{atk_dmg_ndice}d@{atk_dmg_dice}+[[@{atk_dmg_stat}]]+@{atk_dmg_mod}]]}}"></button>
+                </div>
+                <div style="display: table-cell;width:420px;">
+                    <input type="text" name="attr_atk_name" class="sheet-inMainTxt" placeholder="Weapon or special attack" />
+                    1d20+<select name="attr_atk_stat" size="1"  style="text-align: left; width: 60px;" title="Ability adjustment">
+                        <option value="0">-</option>
+                        <option value="@{STR}" selected>Melee</option>
+                        <option value="@{DEX}">Range</option>
+                    </select>+<input type="number" name="attr_atk_mod" class="sheet-inMainNum" style="width: 45px;" title="Misc. modifier" value="0" />
+                </div>
+                <div style="display: table-cell; text-align: right;">
+                    <b>Damage</b>
+                    <input type="number" name="attr_atk_dmg_ndice" class="sheet-inMainNum" style="width: 45px;" title="Number of dice" value="1" /><select name="attr_atk_dmg_dice" size="1"  style="text-align: right; width:55px;" title="Damage dice">
+                        <option value="2">d2</option>
+                        <option value="3">d3</option>
+                        <option value="4">d4</option>
+                        <option value="6">d6</option>
+                        <option value="8">d8</option>
+                        <option value="10">d10</option>
+                        <option value="12">d12</option>
+                    </select>+<select name="attr_atk_dmg_stat" size="1"  style="text-align: left; width: 60px;" title="Ability adjustment to damage roll">
+                        <option value="0">-</option>
+                        <option value="@{STR}" selected>STR</option>
+                    </select>+<input type="number" name="attr_atk_dmg_mod" class="sheet-inMainNum"  style="width: 45px;" title="Modifier to the damage roll" value="0" />
+                </div>
+            </div>
+        </fieldset>
+        </div> <!-- FIN Attaques -->
+    </div>
+    <div class="sheet-bbox">
+        <div style="display: table;  width:100%;">
+            <div style="display: table-row; width: 100%;">
+                 <div style="display: table-cell;width: 50%;">
+                    <div  class="sheet-titre1">___MISC. ACTIONS:</div>
+                </div>
+                 <div style="display: table-cell; ">
+                    <div  class="sheet-titre1"></div>
+                </div>
+            </div>
+            <div style="display: table-row; width: 100%;">
+                <div style="display: table-cell; text-align: left;width: 50%;">
+                    <button type='roll' name='InitRoll' class="sheet-carac-roll"
+                    value="&{template:mold} {{name=Initiative}} {{who=@{character_name}}} {{subtags=Misc. Action}} {{miscroll=[[1d6+[[@{INIT}]] &{tracker}]] }} ">
+                    </button>
+                    Initiative (1d6 +
+                    <input type="number" name="attr_INIT" class="sheet-inMainNum"  style="width: 45px;" value="0" readonly/>)
+                </div>
+                <div style="display: table-cell; text-align: left;width: 50%;">
+                    <button type='roll' name="SurpriseRoll"
+                        value="&{template:mold} {{name=Surprise Check}} {{who=@{character_name}}} {{subtags=Misc. Action}} {{surprise=[[1d6]] }} {{target=[[2]] }}">
+                    </button>
+                    Surprise (1d6 &gt;
+                    <input type="number" name="attr_SURP" class="sheet-inMainNum"  style="width: 45px;" value="2" readonly/>)
+                </div>
+            </div>
+            <div style="display: table-row; width: 100%;">
+                <div style="display: table-cell; text-align: left;width: 50%;">
+                    <button type='roll' name='openroll' 
+                    value="&{template:mold} {{name=Open Stuck Door}} {{who=@{character_name}}} {{subtags=Misc. Action}} {{talent=[[1d6]] }} {{target=[[@{misc_opendoor}]] }}">
+                    </button>
+                    Open Stuck Door (1d6 &lt;=
+                    <input type="number" name="attr_misc_opendoor" class="sheet-inMainNum"  style="width: 45px;" value="2" readonly/>)
+                </div>
+                <div style="display: table-cell; text-align: left;width: 50%;">
+                    <button type='roll' name="findroll"
+                        value="&{template:mold} {{name=Find Secret Doors}} {{who=@{character_name}}} {{subtags=Misc. Action}} {{talent=[[1d6]] }} {{target=[[@{misc_finddoor}]] }}">
+                    </button>
+                    Find Secret Door (1d6 &lt;=
+                    <input type="number" name="attr_misc_finddoor" class="sheet-inMainNum"  style="width: 45px;" value="1" readonly/>)
+                </div>
+            </div>
+            <div style="display: table-row;">
+                <div style="display: table-cell; text-align: left;width: 50%;">
+                    <button type='roll' name="listenroll"
+                        value="&{template:mold} {{name=Listen at Door}} {{who=@{character_name}}} {{subtags=Misc. Action}} {{talent=[[1d6]] }} {{target=[[@{misc_listen}]] }}">
+                    </button>
+                    Listen at Door (1d6 &lt;=
+                    <input type="number" name="attr_misc_listen" class="sheet-inMainNum"  style="width: 45px;" value="1" readonly/>)
+                </div>
+                <div style="display: table-cell; text-align: left;">
+                    <button type='roll' name="traproll"
+                        value="&{template:mold} {{name=Find Room Trap}} {{who=@{character_name}}} {{subtags=Misc. Action}} {{talent=[[1d6]] }} {{target=[[@{misc_findtrap}]] }}">
+                    </button>
+                    Find Room Trap (1d6 &lt;=
+                    <input type="number" name="attr_misc_findtrap" class="sheet-inMainNum"  style="width: 45px;" value="1" readonly/>)
+                </div>
+            </div>
+        </div>
+        <div style="display: table;  width:100%;">
+            <div style="display: table-row">
+                <div style="display: table-cell; width: 380px;"> <!-- CELL TALENT  -->
+                    <div  class="sheet-titre1">___SPECIAL ABILITIES & SKILLS:</div>
+                    <fieldset class="repeating_talents">
+                        <div style="display: table-row;">
+                            <div style="display: table-cell; text-align: center;width: 40px;">
+                                <input class="sheet-hide-it sheet-ltcheck" type="checkbox" name="attr_talent_type" value="1" checked>
+                                <input class="sheet-hide-it sheet-gtcheck" type="checkbox" name="attr_talent_type" value="2">
+                                <div class="sheet-talent-lt">
+                                    <button type='roll' name="talentroll"
+                                    value="&{template:mold} {{name=@{talent_nom}}} {{who=@{character_name}}} {{subtags=Special ability or Skill}} {{talent=[[@{talent_nbde}d@{talent_de}]] }} {{target=[[@{talent_chance}]] }}"></button>
+                                </div>
+                                <div class="sheet-talent-gt">
+                                    <button type='roll' name="gtalentroll"
+                                    value="&{template:mold} {{name=@{talent_nom}}} {{who=@{character_name}}} {{subtags=Special ability or Skill}} {{gtalent=[[@{talent_nbde}d@{talent_de}]] }} {{target=[[@{talent_chance}]] }}"></button>
+                                </div>
+                            </div>
+                            <input style="width:150px;" type="text" name="attr_talent_nom" class="sheet-inMainTxt" placeholder="Ability or Skill" />
+                            &nbsp;<input type="number" name="attr_talent_nbde" class="sheet-inMainNum" style="width: 35px;" title="Number of Dice" value="1" />
+                            <select name="attr_talent_de" size="1"  style="text-align: right; width: 53px;">
+                                <option value="4">d4</option>
+                                <option value="6" selected>d6</option>
+                                <option value="8">d8</option>
+                                <option value="10">d10</option>
+                                <option value="12">d12</option>
+                                <option value="20">d20</option>
+                                <option value="100">d100</option>
+                            </select>
+                            <select name="attr_talent_type" size="1"  style="text-align: right; width: 40px;">
+                                <option value="1" selected>&lt;=</option>
+                                <option value="2">&gt;=</option>
+                            </select>
+                            <input type="number" name="attr_talent_chance" class="sheet-inMainNum"  style="width: 40px;" value="2" />
+                        </div>
+                    </fieldset>
+                </div> <!-- FIN CELL Talents -->
+                <div style="display:table-cell;padding:5px;"></div>
+                <div style="display:table-cell;border-left: 1px solid black;padding:5px;"></div>
+                <div style="display: table-cell; text-align:left;"> <!-- CELL SORTS  -->
+                    <div class="sheet-titre1">___SPELLS:</div>
+                    <fieldset class="repeating_sorts">
+                        <div style="display: table-row;">
+                            <input type="text" name="attr_sort_nom" class="sheet-inMainTxt" title="Spell name" />
+                            <input type="text" name="attr_sort_niveau" class="sheet-inMainNum"  style="width: 25px;" value="1" title="Spell level" />
+                            P<input type="checkbox" name="attr_sort_prepare" value="1" title="Spell prepared once" />
+                            <input type="checkbox" name="attr_sort_prepare" value="2" title="Spell prepared twice" />
+                            <input type="checkbox" name="attr_sort_prepare" value="3" title="Spell prepared thrice" />
+                            C<input type="checkbox" name="attr_sort_lance" value="1" title="Spell cast once" />
+                            <input type="checkbox" name="attr_sort_lance" value="2" title="Spell cast twice" />
+                            <input type="checkbox" name="attr_sort_lance" value="3" title="Spell cast thrice" />
+                        </div>
+                    </fieldset>
+                </div> <!-- FIN CELL SORTS  -->
+            </div>
+        </div> <!-- FIN TALENT et SORTS -->
+    </div>
+    <div class="sheet-bbox" style="border-bottom:1px solid black;">
+        <div style="display: table; text-align:left; width:100%;"> <!-- EQUIPEMENT -->
+            <div style="display: table-row; width:100%;">
+                <div  class="sheet-titre1" style="width:150px;">___EQUIPMENT CARRIED:</div>
+            </div>
+            <div style="display: table-row; width:100%;">
+                MONEY and TREASURE
+                <input name="attr_equip_cp" title="Copper pieces" class="sheet-inMainNum" type="text" style="width: 65px;text-align:right;" value="0" />
+                cp
+                <input name="attr_equip_sp" title="Silver pieces" class="sheet-inMainNum" type="text" style="width: 65px;text-align:right;" value="0" />
+                sp
+                <input name="attr_equip_ep" title="Electrum pieces" class="sheet-inMainNum" type="text" style="width: 65px;text-align:right;" value="0" />
+                ep
+                <input name="attr_equip_gp" title="Gold pieces" class="sheet-inMainNum" type="text" style="width: 65px;text-align:right;" value="0" />
+                gp
+                <input name="attr_equip_pp" title="Platinum pieces" class="sheet-inMainNum" type="text" style="width: 65px;text-align:right;" value="0" />
+                pp
+            </div>
+        </div>
+        <br/>
+        <div style="display: table; text-align:left; width:100%;">  <!-- Encombrement et deplacmeent -->
+            <div style="display: table-row; width:100%;">
+                <div style="display:table-cell;"><b>Encumbrance</b></div>
+                <div style="display: table-cell;">&nbsp;</div>
+                <div style="display: table-cell;">Normal</div>
+                <div style="display: table-cell;">Encounter</div>
+                <div style="display: table-cell;">Running</div>
+                <div style="display: table-cell;">Outdoor</div>
+            </div>
+            <div style="display: table-row; width:100%;">
+                <div style="display:table-cell;text-align: center;">
+                    <input type="text" name="attr_encombrement" class="sheet-inPetitNum" title="Character Encumbrance measured in coins" value="0" readonly/>
+                    coins
+                </div>
+                <div style="display: table-cell;text-align:right;"><b>Movement</b></div>
+                <div style="display:table-cell;">
+                    <input type="text" name="attr_mvt_exploration" class="sheet-inPetitNum" title="Normal or Exploration move in doors in feet per turn" value="120" readonly/>
+                    '/turn
+                </div>
+                <div style="display:table-cell;">
+                    <input type="text" name="attr_mvt_combat" class="sheet-inPetitNum" title="Encounter or Combat Movement in feet per round" value="40" readonly/>
+                    '/round
+                </div>
+                <div style="display:table-cell;">
+                    <input type="text" name="attr_mvt_running" class="sheet-inPetitNum" title="Running Movement in feet per round" value="@{mvt_exploration}" disabled="1"/>
+                    '/round
+                </div>
+                <div style="display:table-cell;">
+                    <input type="text" name="attr_mvt_outdoor" class="sheet-inPetitNum" title="Normal or Exploration Movement outdoor, in miles per day" value="@{mvt_exploration}/5" disabled="1"/>
+                    m./day
+                </div>
+            </div> <!-- Fin Encombrement et deplacmeent -->
+        </div>
+        <br/>
+        <div style="display: table; text-align:left; width:100%;"> <!-- EQUIPEMENT suite -->
+            <div style="display: table-row;">
+                <div style="display: table-cell;width:400px;"> <!-- CELL EQUIP LISTE -->
+                    <div  class="sheet-libel1">Equipment and Weight in Coins</div>
+                    <fieldset class="repeating_equipement" >
+                        <div style="display: table-row;">
+                            <div style="display: table-cell;">
+                                    <input type="text" name="attr_equip_nom" class="sheet-inMainTxt" style="width: 330px;" placeholder="Item" />
+                                    <input type="number" name="attr_equip_wt" class="sheet-inMainNum"  style="width: 50px;" value="0" title="cns." />
+                            </div>
+                        </div>
+                    </fieldset>
+                </div> <!-- FIN CELL EQUIP LISTE -->
+                <div style="display:table-cell;padding:5px;"></div>
+                <div style="display:table-cell;border-left: 1px solid black;padding:5px;"></div>
+                <div style="display: table-cell;width:350px;"> <!-- CELL EQUIP DIVERS -->
+                    <div class="sheet-libel1">Notes</div>
+                    <textarea name="attr_equip_divers"  title="Notes" placeholder="Notes"></textarea>
+                </div> <!-- FIN CELL EQUIP DIVERS -->
+            </div>
+        </div> <!-- FIN EQUIPEMENT -->
+    </div>
+</div>
+<!--- templates -->
+<rolltemplate class="sheet-rolltemplate-mold">
+    <table>
+        {{#who}}
+            <tr><td class="subheader">{{who}}&nbsp;</td></tr>
+        {{/who}}
+        <tr><td class="subheader">{{subtags}}&nbsp;</td></tr>
+        <tr><th>{{name}}</th></tr>
+        <tr><td><hr/></td></tr>
+        {{#HD}}
+            <tr class="rowcolor"><td><span class="tcat">Hit Points + </span>{{HD}}</td></tr>
+        {{/HD}}
+        {{#miscroll}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{miscroll}}</td></tr>
+        {{/miscroll}}
+        {{#statroll}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{statroll}} &lt;= {{target}} </td></tr>
+            {{#rollLess() statroll target}}
+                    <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+            {{/rollLess() statroll target}}
+            {{#rollTotal() statroll target}}
+                    <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+            {{/rollTotal() statroll target}}
+            {{#rollGreater() statroll target}}
+                    <tr><td class="subheader" style="color:red;"><b>Failure.</b></td></tr>
+            {{/rollGreater() statroll target}}
+        {{/statroll}}
+        {{#saveroll}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{saveroll}} &gt; {{target}}</td></tr>
+            {{#rollLess() saveroll target}}
+                    <tr><td class="subheader" style="color:red;"><b>Failure.</b></td></tr>
+            {{/rollLess() saveroll target}}
+            {{#rollTotal() saveroll target}}
+                    <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+            {{/rollTotal() saveroll target}}
+            {{#rollGreater() saveroll target}}
+                    <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+            {{/rollGreater() saveroll target}}
+        {{/saveroll}}
+        {{#reaction}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{reaction}}</td></tr>
+            {{#rollLess() reaction 0}}
+                    <tr><td class="subheader" style="color:red;"><b>Hostile!</b></td></tr>
+            {{/rollLess() reaction 0}}
+            {{#rollBetween() reaction 0 2}}
+                    <tr><td class="subheader" style="color:red;"><b>Hostile!</b></td></tr>
+            {{/rollBetween() reaction 0 2}}
+            {{#rollBetween() reaction 3 5}}
+                    <tr><td class="subheader" style="color:firebrick;"><b>Unfriendly.</b></td></tr>
+            {{/rollBetween() reaction 3 5}}
+            {{#rollBetween() reaction 6 8}}
+                    <tr><td class="subheader" style="color:gold;"><b>Uncertain.</b></td></tr>
+            {{/rollBetween() reaction 6 8}}
+            {{#rollBetween() reaction 9 11}}
+                    <tr><td class="subheader" style="color:darkgreen;"><b>Uninterested.</b></td></tr>
+            {{/rollBetween() reaction 9 11}}
+            {{#rollGreater() reaction 11}}
+                    <tr><td class="subheader" style="color:green;"><b>Helpful!</b></td></tr>
+            {{/rollGreater() reaction 11}}
+        {{/reaction}}
+        {{#hiring}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{hiring}}</td></tr>
+            {{#rollLess() hiring 0}}
+                    <tr><td class="subheader" style="color:red;"><b>Ill Will!</b></td></tr>
+            {{/rollLess() hiring 0}}
+            {{#rollBetween() hiring 0 2}}
+                    <tr><td class="subheader" style="color:red;"><b>Ill Will!</b></td></tr>
+            {{/rollBetween() hiring 0 2}}
+            {{#rollBetween() hiring 3 5}}
+                    <tr><td class="subheader" style="color:firebrick;"><b>Offer Refused.</b></td></tr>
+            {{/rollBetween() hiring 3 5}}
+            {{#rollBetween() hiring 6 8}}
+                    <tr><td class="subheader" style="color:gold;"><b>Roll Again.</b></td></tr>
+            {{/rollBetween() hiring 6 8}}
+            {{#rollBetween() hiring 9 11}}
+                    <tr><td class="subheader" style="color:darkgreen;"><b>Offer Accepted.</b></td></tr>
+            {{/rollBetween() hiring 9 11}}
+            {{#rollGreater() hiring 11}}
+                    <tr><td class="subheader" style="color:green;"><b>Offer Accepted!</b></td></tr>
+            {{/rollGreater() hiring 11}}
+        {{/hiring}}
+        {{#loyalty}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{loyalty}} &lt;= {{target}}</td></tr>
+            {{#rollLess() loyalty target}}
+                    <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+                    {{#success}}
+                        <tr><td>{{success}}</td></tr>
+                    {{/success}}
+            {{/rollLess() loyalty target}}
+            {{#rollTotal() loyalty target}}
+                    <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+                    {{#success}}
+                        <tr><td>{{success}}</td></tr>
+                    {{/success}}
+            {{/rollTotal() loyalty target}}
+            {{#rollGreater() loyalty target}}
+                    <tr><td class="subheader" style="color:red;"><b>Failure.</b></td></tr>
+            {{/rollGreater() loyalty target}}
+        {{/loyalty}}
+        {{#morale}}
+            <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{morale}} &lt;= {{target}}</td></tr>
+            {{#rollLess() morale target}}
+                    <tr><td class="subheader" style="color:green;"><b>Fight!</b></td></tr>
+            {{/rollLess() morale target}}
+            {{#rollTotal() morale target}}
+                    <tr><td class="subheader" style="color:green;"><b>Fight!</b></td></tr>
+            {{/rollTotal() morale target}}
+            {{#rollGreater() morale target}}
+                    <tr><td class="subheader" style="color:red;"><b>Flee!</b></td></tr>
+            {{/rollGreater() morale target}}
+        {{/morale}}
+        {{#talent}}
+            {{#rollGreater() target 0}}
+                <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{talent}} &lt;= {{target}}</td></tr>
+                {{#rollLess() talent target}}
+                        <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+                        {{#success}}
+                            <tr><td>{{success}}</td></tr>
+                        {{/success}}
+                {{/rollLess() talent target}}
+                {{#rollTotal() talent target}}
+                        <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+                        {{#success}}
+                            <tr><td>{{success}}</td></tr>
+                        {{/success}}
+                {{/rollTotal() talent target}}
+                {{#rollGreater() talent target}}
+                        <tr><td class="subheader" style="color:red;"><b>Failure.</b></td></tr>
+                {{/rollGreater() talent target}}
+            {{/rollGreater() target 0}}
+            {{#rollTotal() target 0}}
+                <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{talent}}</td></tr>
+            {{/rollTotal() target 0}}
+        {{/talent}}
+        {{#gtalent}}
+            {{#rollGreater() target 0}}
+                <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{gtalent}} &gt;= {{target}}</td></tr>
+                {{#rollLess() gtalent target}}
+                        <tr><td class="subheader" style="color:red;"><b>Failure.</b></td></tr>
+                {{/rollLess() gtalent target}}
+                {{#rollTotal() gtalent target}}
+                        <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+                        {{#success}}
+                            <tr><td>{{success}}</td></tr>
+                        {{/success}}
+                {{/rollTotal() gtalent target}}
+                {{#rollGreater() gtalent target}}
+                        <tr><td class="subheader" style="color:green;"><b>Success!</b></td></tr>
+                        {{#success}}
+                            <tr><td>{{success}}</td></tr>
+                        {{/success}}
+                {{/rollGreater() gtalent target}}
+            {{/rollGreater() target 0}}
+            {{#rollTotal() target 0}}
+                <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{gtalent}}</td></tr>
+            {{/rollTotal() target 0}}
+        {{/gtalent}}
+        {{#surprise}}
+            {{#rollGreater() target 0}}
+                <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{surprise}} &gt; {{target}}</td></tr>
+                {{#rollLess() surprise target}}
+                        <tr><td class="subheader" style="color:red;"><b>Surprised!</b></td></tr>
+                {{/rollLess() surprise target}}
+                {{#rollTotal() surprise target}}
+                        <tr><td class="subheader" style="color:red;"><b>Surprised!</b></td></tr>
+                {{/rollTotal() surprise target}}
+                {{#rollGreater() surprise target}}
+                        <tr><td class="subheader" style="color:green;"><b>Not Surprised!</b></td></tr>
+                {{/rollGreater() surprise target}}
+            {{/rollGreater() target 0}}
+            {{#rollTotal() target 0}}
+                <tr class="rowcolor"><td><span class="tcat">Roll: </span>{{surprise}}</td></tr>
+            {{/rollTotal() target 0}}
+        {{/surprise}}
+        {{#attack}}
+            <tr class="rowcolor"><td><span class="tcat">To Hit: </span>{{attack}}</td></tr>
+            {{#damage}}
+                <tr><td><span class="tcat">Damage: </span>{{damage}}</td></tr>
+            {{/damage}}
+        {{/attack}}
+        {{#spell}}
+            <tr class="rowcolor"><td><span class="tcat">Range:</span>{{range}}</td></tr>
+            <tr class="rowcolor"><td><span class="tcat">Duration:</span>{{duration}}</td></tr>
+            <tr><td><span class="tcat"></span>{{spell}}</td></tr>
+        {{/spell}}
+        {{#type}}
+            {{#allprops() type who subtags name description}}
+                <tr><td><span class="tcat">{{key}}:</span><br/>{{value}}</td></tr>
+            {{/allprops() type who subtags name description}}
+        {{/type}}
+        {{#description}}
+                <tr><td><span class="tcat"></span>{{description}}</td></tr>
+        {{/description}}
+    </table>
+</rolltemplate>
+<!-- Sheet workers -->
+<script type="text/worker">
+on('sheet:opened', function() {
+    getAttrs(["is_npc"], function(values) {
+        if (values.is_npc==0) setAttrs({ is_npc: 0 });
+    });
+});
+
+// Ability modifiers
+['strength', 'wisdom', 'dexterity', 'constitution'].forEach(ability => {
+  on(`sheet:opened change:${ability.toLowerCase()}`, () => {
+    getAttrs([ability.toLowerCase()], v => {
+      const value = parseInt(v[ability.toLowerCase()]) || 10,
+        setting = {};
+      if (value <= 3) setting[(`${ability}`.toUpperCase()).substr(0,3)] = -3;
+      else if (value <= 5) setting[(`${ability}`.toUpperCase()).substr(0,3)] = -2;
+      else if (value <= 8) setting[(`${ability}`.toUpperCase()).substr(0,3)] = -1;
+      else if (value <= 12) setting[(`${ability}`.toUpperCase()).substr(0,3)] = 0;
+      else if (value <= 15) setting[(`${ability}`.toUpperCase()).substr(0,3)] = 1;
+      else if (value <= 17) setting[(`${ability}`.toUpperCase()).substr(0,3)] = 2;
+      else setting[(`${ability}`.toUpperCase()).substr(0,3)] = 3;
+      setAttrs(setting);
+    });
+  });
+});
+// Special Cases for Strength, Intelligence, Dex/Init and Charisma
+on('sheet:opened change:Class change:strength change:intelligence change:dexterity change:charisma', function() {
+    getAttrs(["Class", "strength", "intelligence", "dexterity", "charisma"], function(values) {
+      const strVal = parseInt(values.strength.toLowerCase()) || 10;
+      const intVal = parseInt(values.intelligence.toLowerCase()) || 10;
+      const dexVal = parseInt(values.dexterity.toLowerCase()) || 10;
+      const chaVal = parseInt(values.charisma.toLowerCase()) || 10;
+      var classINIT = 0;
+        setting = {};
+      if (values.Class.toUpperCase() == "HALFLING") classINIT = 1;
+      if (strVal <= 8) setting[`misc_opendoor`] = 1;
+      else if (strVal <= 12) setting[`misc_opendoor`] = 2;
+      else if (strVal <= 15) setting[`misc_opendoor`] = 3;
+      else if (strVal <= 17) setting[`misc_opendoor`] = 4;
+      else setting[`misc_opendoor`] = 5;  
+      if (intVal <= 5) setting[`INTLANG`] = 'Illiterate';
+      else if (intVal <= 8) setting[`INTLANG`] = 'Basic';
+      else setting[`INTLANG`] = 'Literate';
+      if (intVal <= 12) setting[`INT`] = 0;
+      else if (intVal <= 15) setting[`INT`] = 1;
+      else if (intVal <= 17) setting[`INT`] = 2;
+      else setting[`INT`] = 3;
+      if (dexVal <= 3) setting[`INIT`] = -2+classINIT;
+      else if (dexVal <= 8) setting[`INIT`] = -1+classINIT;
+      else if (dexVal <= 12) setting[`INIT`] = 0+classINIT;
+      else if (dexVal <= 17) setting[`INIT`] = 1+classINIT;
+      else setting[`INIT`] = 2+classINIT;
+      if (chaVal <= 3) setting[`CHA`] = -2;
+      else if (chaVal <= 8) setting[`CHA`] = -1;
+      else if (chaVal <= 12) setting[`CHA`] = 0;
+      else if (chaVal <= 17) setting[`CHA`] = 1;
+      else setting[`CHA`] = 2;
+      if (chaVal <= 3) setting[`CHALOYAL`] = 4;
+      else if (chaVal <= 5) setting[`CHALOYAL`] = 5;
+      else if (chaVal <= 8) setting[`CHALOYAL`] = 6;
+      else if (chaVal <= 12) setting[`CHALOYAL`] = 7;
+      else if (chaVal <= 15) setting[`CHALOYAL`] = 8;
+      else if (chaVal <= 17) setting[`CHALOYAL`] = 9;
+      else setting[`CHALOYAL`] = 10;
+
+      setAttrs(setting);
+    });
+});
+// Encumrance
+on('change:repeating_equipement remove:repeating_equipement change:equip_cp change:equip_sp change:equip_ep change:equip_gp change:equip_pp', function() {
+    var totalCoins=0;
+    var weight_id = "";
+    getAttrs(["equip_cp","equip_sp","equip_ep","equip_gp","equip_pp"], function(values) {
+        for(val in values) {
+            if( values.hasOwnProperty( val ) ) {
+                totalCoins += parseFloat( values[val] );
+            }
+        }
+        getSectionIDs("repeating_equipement", function(idArray)  {
+            for(var i=0; i < idArray.length; i++) {
+                var id = idArray[i];
+                weight_id = "repeating_equipement_" + id + "_equip_wt";
+                getAttrs([weight_id], function(values) {
+                    for(val in values) {
+                        if( values.hasOwnProperty( val ) ) {
+                            totalCoins += parseFloat( values[val] );
+                        }
+                    }
+                    if(totalCoins > 1600) {
+                        setAttrs({ encombrement: totalCoins, mvt_exploration: 0, mvt_combat: 0 });
+                    } else if(totalCoins > 800) {
+                        setAttrs({ encombrement: totalCoins, mvt_exploration: 30, mvt_combat: 10 });
+                    } else if(totalCoins > 600) {
+                        setAttrs({ encombrement: totalCoins, mvt_exploration: 60, mvt_combat: 20 });
+                    } else if(totalCoins > 400) {
+                        setAttrs({ encombrement: totalCoins, mvt_exploration: 90, mvt_combat: 30 });
+                    } else {
+                        setAttrs({ encombrement: totalCoins, mvt_exploration: 120, mvt_combat: 40 });
+                    }
+                });
+            }
+        });
+    });
+});
+// Calculating HitDie, and Misc Basic Skills
+on('change:Class change:Level', function() {
+    getAttrs(["Class","Level"], function(values) {
+        switch (values.Class.toUpperCase()) {
+            case "CLERIC":
+            case "BARD":
+            case "DRUID":
+            case "HALF-ORC":
+            case "SVIRFNEBLIN":
+            case "ELF (FAIRY)":
+            case "WOODGRUE":
+            case "GRIMALKIN":
+            case "HUNTER":
+                setAttrs({ HD: 6, SURP: 2, misc_finddoor: 1, misc_listen: 1, misc_findtrap: 1 });
+                break;
+            case "DWARF":
+                setAttrs({ HD: 8, SURP: 2, misc_finddoor: 1, misc_listen: 2, misc_findtrap: 2 });
+                break;
+            case "ELF":
+            case "DROW":
+                setAttrs({ HD: 6, SURP: 2, misc_finddoor: 2, misc_listen: 2, misc_findtrap: 1 });
+                break;
+            case "FIGHTER":
+            case "BARBARIAN":
+            case "KNIGHT":
+            case "PALADIN":
+                setAttrs({ HD: 8, SURP: 2, misc_finddoor: 1, misc_listen: 1, misc_findtrap: 1 });
+                break;
+            case "HALFLING":
+            case "RATLING":
+                setAttrs({ HD: 6, SURP: 2, misc_finddoor: 1, misc_listen: 2, misc_findtrap: 1 });
+                break;
+            case "MAGIC-USER":
+            case "ACROBAT":
+            case "ILLUSIONIST":
+                setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 1, misc_findtrap: 1 });
+                break;
+            case "THIEF":
+            case "ASSASSIN":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 1, misc_findtrap: 1 });
+                        break;
+                    case 1:
+                    case 2:
+                        setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 2, misc_findtrap: 1 });
+                        break;
+                    case 3:
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 3, misc_findtrap: 1 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                        setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 4, misc_findtrap: 1 });
+                        break;
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 5, misc_findtrap: 1 });
+                        break;
+                }
+                break;
+            case "DUERGAR":
+                setAttrs({ HD: 6, SURP: 2, misc_finddoor: 1, misc_listen: 2, misc_findtrap: 2 });
+                break;
+            case "GNOME":
+                setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 2, misc_findtrap: 1 });
+                break;
+            case "HALF-ELF":
+                setAttrs({ HD: 6, SURP: 2, misc_finddoor: 2, misc_listen: 1, misc_findtrap: 1 });
+                break;
+            case "RANGER":
+                setAttrs({ HD: 8, SURP: 1, misc_finddoor: 1, misc_listen: 1, misc_findtrap: 1 });
+                break;
+            case "MOSS DWARF":
+                setAttrs({ HD: 6, SURP: 2, misc_finddoor: 1, misc_listen: 2, misc_findtrap: 1 });
+                break;
+            default: 
+                setAttrs({ HD: 4, SURP: 2, misc_finddoor: 1, misc_listen: 1, misc_findtrap: 1 });
+        }
+    });
+});
+// Calculating Character THAC0 and Saving Throws
+on('change:Class change:Level', function() {
+    getAttrs(["Class","Level"], function(values) {
+        switch (values.Class.toUpperCase()) {
+            case "CLERIC":
+            case "DRUID":
+            case "GRIMALKIN":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 11, ST_Wand: 12, ST_Stone: 14, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 9, ST_Wand: 10, ST_Stone: 12, ST_Breath: 14, ST_Spell: 12 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 6, ST_Wand: 7, ST_Stone: 9, ST_Breath: 11, ST_Spell: 9 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 3, ST_Wand: 5, ST_Stone: 7, ST_Breath: 8, ST_Spell: 7 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "ELF":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 15 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 10:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "DWARF":
+            case "MOSS DWARF": //DON'T HAVE THE RULES
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 7, ST_Spell: 8 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 4, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "FIGHTER":
+            case "KNIGHT":
+            case "RANGER":
+            case "HUNTER":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 12, ST_Wand: 13, ST_Stone: 14, ST_Breath: 15, ST_Spell: 16 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 10, ST_Wand: 11, ST_Stone: 12, ST_Breath: 13, ST_Spell: 14 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 10, ST_Spell: 12 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 10, ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 5, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "HALFLING":
+            case "RATLING":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 7, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "MAGIC-USER":
+            case "ILLUSIONIST":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 11, ST_Wand: 12, ST_Stone: 11, ST_Breath: 14, ST_Spell: 12 });
+                        break;
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 9, ST_Stone: 8, ST_Breath: 11, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "THIEF":
+            case "ACROBAT":
+            case "ASSASSIN":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 12, ST_Wand: 13, ST_Stone: 11, ST_Breath: 14, ST_Spell: 13 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 10, ST_Wand: 11, ST_Stone: 9, ST_Breath: 12, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 8, ST_Wand: 9, ST_Stone: 7, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "BARBARIAN":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 10, ST_Wand: 13, ST_Stone: 12, ST_Breath: 15, ST_Spell: 16 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 8, ST_Wand: 11, ST_Stone: 10, ST_Breath: 13, ST_Spell: 13 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 6, ST_Wand: 9, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 4, ST_Wand: 7, ST_Stone: 6, ST_Breath: 8, ST_Spell: 7 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 10, ST_Poison: 3, ST_Wand: 5, ST_Stone: 4, ST_Breath: 5, ST_Spell: 5
+                        });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "BARD":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 12, ST_Wand: 13, ST_Stone: 11, ST_Breath: 14, ST_Spell: 13 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 10, ST_Wand: 11, ST_Stone: 9, ST_Breath: 12, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 8, ST_Wand: 9, ST_Stone: 7, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "DROW":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    case 10:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "DUERGAR":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 7, ST_Spell: 8 });
+                        break;
+                    case 10:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 4, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "GNOME":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 14, ST_Spell: 11 });
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 11, ST_Spell: 9 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "HALF-ELF":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 15 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "HALF-ORC":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 12, ST_Wand: 13, ST_Stone: 11, ST_Breath: 14, ST_Spell: 13 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "PALADIN":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 10, ST_Wand: 11, ST_Stone: 12, ST_Breath: 13, ST_Spell: 14 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 11, ST_Spell: 12 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 10 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 6, ST_Spell: 8 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 10, ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 3, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "SVIRFNEBLIN":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+							setAttrs({ ToucheCA0: 19, ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 14, ST_Spell: 11 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 11, ST_Spell: 9 });
+                        break;
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 9, ST_Spell: 7 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "ELF (FAIRY)":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    case 10:
+                        setAttrs({ ToucheCA0: 12, ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 6 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "WOODGRUE":
+                switch (parseInt(values.Level)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ToucheCA0: 19, ST_Poison: 13, ST_Wand: 12, ST_Stone: 14, ST_Breath: 16, ST_Spell: 14 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17, ST_Poison: 11, ST_Wand: 10, ST_Stone: 11, ST_Breath: 14, ST_Spell: 11 });
+                        break;
+                    case 9:
+                    case 10:
+                        setAttrs({ ToucheCA0: 14, ST_Poison: 8, ST_Wand: 7, ST_Stone: 9, ST_Breath: 11, ST_Spell: 9 });
+                    default:
+                        setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            default: 
+                setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+        }
+    });
+});
+// Calculating NPC THAC0
+on('change:FightAs change:FightAsLevel', function() {
+    getAttrs(["FightAs","FightAsLevel"], function(values) {
+        switch (values.FightAs.toUpperCase()) {
+            case "MONSTER":
+                switch (parseInt(values.FightAsLevel)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20 });
+                        break;
+                    case 1:
+                        setAttrs({ ToucheCA0: 19 });
+                        break;
+                    case 2:
+                        setAttrs({ ToucheCA0: 18 });
+                        break;
+                    case 3:
+                        setAttrs({ ToucheCA0: 17 });
+                        break;
+                    case 4:
+                        setAttrs({ ToucheCA0: 16 });
+                        break;
+                    case 5:
+                        setAttrs({ ToucheCA0: 15 });
+                        break;
+                    case 6:
+                        setAttrs({ ToucheCA0: 14 });
+                        break;
+                    case 7:
+                        setAttrs({ ToucheCA0: 13 });
+                        break;
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 12 });
+                        break;
+                    case 10:
+                    case 11:
+                        setAttrs({ ToucheCA0: 11 });
+                        break;
+                    case 12:
+                    case 13:
+                        setAttrs({ ToucheCA0: 10 });
+                        break;
+                    case 14:
+                    case 15:
+                        setAttrs({ ToucheCA0: 9 });
+                        break;
+                    case 16:
+                    case 17:
+                        setAttrs({ ToucheCA0: 8 });
+                        break;
+                    case 18:
+                    case 19:
+                        setAttrs({ ToucheCA0: 7 });
+                        break;
+                    case 20:
+                    case 21:
+                        setAttrs({ ToucheCA0: 6 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 5 });
+                }
+                break;
+            case "NORMAL-MAN":
+                setAttrs({ ToucheCA0: 20 });
+                break;
+            case "CLERIC":
+            case "DRUID":
+            case "THIEF":
+            case "ACROBAT":
+            case "ASSASSIN":
+            case "BARD":
+            case "HALF-ORC":
+            case "WOODGRUE":
+            case "GRIMALKIN":
+                switch (parseInt(values.FightAsLevel)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ToucheCA0: 19 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ToucheCA0: 17 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 14 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 12 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20 });
+                }
+                break;
+            case "FIGHTER":
+            case "KNIGHT":
+            case "RANGER":
+            case "ELF":
+            case "DWARF":
+            case "HALFLING":
+            case "BARBARIAN":
+            case "DROW":
+            case "DUERGAR":
+            case "HALF-ELF":
+            case "PALADIN":
+            case "SVIRFNEBLIN":
+            case "ELF (FAIRY)":
+            case "MOSS DWARF":
+            case "HUNTER":
+            case "RATLING":
+                switch (parseInt(values.FightAsLevel)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ToucheCA0: 19 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ToucheCA0: 17 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ToucheCA0: 14 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ToucheCA0: 12 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 10 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20 });
+                }
+                break;
+            case "MAGIC-USER":
+            case "ILLUSIONIST":
+            case "GNOME":
+                switch (parseInt(values.FightAsLevel)) {
+                    case 0:
+                        setAttrs({ ToucheCA0: 20 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        setAttrs({ ToucheCA0: 19 });
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                        setAttrs({ ToucheCA0: 17 });
+                        break;
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        setAttrs({ ToucheCA0: 14 });
+                        break;
+                    default:
+                        setAttrs({ ToucheCA0: 20 });
+                }
+                break;
+            default: 
+                setAttrs({ ToucheCA0: 20, ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+        }
+    });
+});
+// Calculating NPC Saving Throws
+on('change:SaveAs change:SaveAsLevel', function() {
+    getAttrs(["SaveAs","SaveAsLevel"], function(values) {
+        switch (values.SaveAs.toUpperCase()) {
+            case "MONSTER":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 14, ST_Breath: 15, ST_Spell: 16 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 12, ST_Breath: 13, ST_Spell: 14 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 10, ST_Spell: 12 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                    case 15:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 5, ST_Spell: 8 });
+                        break;
+                    case 16:
+                    case 17:
+                    case 18:
+                        setAttrs({ ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 3, ST_Spell: 6 });
+                        break;
+                    case 19:
+                    case 20:
+                    case 21:
+                        setAttrs({ ST_Poison: 2, ST_Wand: 2, ST_Stone: 2, ST_Breath: 2, ST_Spell: 4 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 2, ST_Wand: 2, ST_Stone: 2, ST_Breath: 2, ST_Spell: 2 });
+                }
+                break;
+            case "NORMAL-MAN":
+                setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                break;
+            case "CLERIC":
+            case "DRUID":
+            case "GRIMALKIN": //DON'T HAVE THE RULES
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ST_Poison: 11, ST_Wand: 12, ST_Stone: 14, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 9, ST_Wand: 10, ST_Stone: 12, ST_Breath: 14, ST_Spell: 12 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 9, ST_Breath: 11, ST_Spell: 9 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 3, ST_Wand: 5, ST_Stone: 7, ST_Breath: 8, ST_Spell: 7 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "ELF":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 15 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 10:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "DWARF":
+            case "MOSS DWARF": //DON'T HAVE THE RULES
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 7, ST_Spell: 8 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 4, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "FIGHTER":
+            case "KNIGHT":
+            case "RANGER":
+            case "HUNTER":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 14, ST_Breath: 15, ST_Spell: 16 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 12, ST_Breath: 13, ST_Spell: 14 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 10, ST_Spell: 12 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 5, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "HALFLING":
+            case "RATLING":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 7, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "MAGIC-USER":
+            case "ILLUSIONIST":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        setAttrs({ ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                        setAttrs({ ST_Poison: 11, ST_Wand: 12, ST_Stone: 11, ST_Breath: 14, ST_Spell: 12 });
+                        break;
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 8, ST_Breath: 11, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "THIEF":
+            case "ACROBAT":
+            case "ASSASSIN":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 11, ST_Breath: 14, ST_Spell: 13 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 9, ST_Breath: 12, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 7, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "BARBARIAN":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 13, ST_Stone: 12, ST_Breath: 15, ST_Spell: 16 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 11, ST_Stone: 10, ST_Breath: 13, ST_Spell: 13 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 9, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 7, ST_Stone: 6, ST_Breath: 8, ST_Spell: 7 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 3, ST_Wand: 5, ST_Stone: 4, ST_Breath: 5, ST_Spell: 5
+                        });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "BARD":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 11, ST_Breath: 14, ST_Spell: 13 });
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 9, ST_Breath: 12, ST_Spell: 10 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 7, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "DROW":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    case 10:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "DUERGAR":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 7, ST_Spell: 8 });
+                        break;
+                    case 10:
+                        setAttrs({ ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 4, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "GNOME":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 14, ST_Spell: 11 });
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 11, ST_Spell: 9 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "HALF-ELF":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 15 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 12 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 10 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 8 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "HALF-ORC":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ST_Poison: 13, ST_Wand: 14, ST_Stone: 13, ST_Breath: 16, ST_Spell: 15 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 11, ST_Breath: 14, ST_Spell: 13 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "PALADIN":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 12, ST_Breath: 13, ST_Spell: 14 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 11, ST_Spell: 12 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 10 });
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 6, ST_Spell: 8 });
+                        break;
+                    case 13:
+                    case 14:
+                        setAttrs({ ST_Poison: 2, ST_Wand: 3, ST_Stone: 4, ST_Breath: 3, ST_Spell: 6
+                        });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "SVIRFNEBLIN":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+						setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 10, ST_Breath: 14, ST_Spell: 11 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 11, ST_Spell: 9 });
+                        break;
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 4, ST_Wand: 5, ST_Stone: 6, ST_Breath: 9, ST_Spell: 7 });
+                        break;
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "ELF (FAIRY)":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                        setAttrs({ ST_Poison: 12, ST_Wand: 13, ST_Stone: 13, ST_Breath: 15, ST_Spell: 12 });
+                        break;
+                    case 4:
+                    case 5:
+                    case 6:
+                        setAttrs({ ST_Poison: 10, ST_Wand: 11, ST_Stone: 11, ST_Breath: 13, ST_Spell: 10 });
+                        break;
+                    case 7:
+                    case 8:
+                    case 9:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 9, ST_Stone: 9, ST_Breath: 10, ST_Spell: 8 });
+                        break;
+                    case 10:
+                        setAttrs({  ST_Poison: 6, ST_Wand: 7, ST_Stone: 8, ST_Breath: 8, ST_Spell: 6 });
+                        break;
+                    default:
+                        setAttrs({  ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            case "WOODGRUE":
+                switch (parseInt(values.SaveAsLevel)) {
+                    case 0:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                        break;
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        setAttrs({ ST_Poison: 13, ST_Wand: 12, ST_Stone: 14, ST_Breath: 16, ST_Spell: 14 });
+                        break;
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                        setAttrs({ ST_Poison: 11, ST_Wand: 10, ST_Stone: 11, ST_Breath: 14, ST_Spell: 11 });
+                        break;
+                    case 9:
+                    case 10:
+                        setAttrs({ ST_Poison: 8, ST_Wand: 7, ST_Stone: 9, ST_Breath: 11, ST_Spell: 9 });
+                    default:
+                        setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+                }
+                break;
+            default: 
+                setAttrs({ ST_Poison: 14, ST_Wand: 15, ST_Stone: 16, ST_Breath: 17, ST_Spell: 18 });
+        }
+    });
+});
+</script>
