@@ -7,8 +7,7 @@
     border-color: black;
 }
 .sheet-rolltemplate-mold table {
-    /*width: 189px;*/
-    width: 100%;
+    width: 189px;
     padding: 2px;
     border: 1px solid;
     background-color: #ffffff;
@@ -240,19 +239,6 @@ textarea {
     padding-top: 0px;
     font-weight: bold;
 }
-
-.sheet-hide-it {
-    display: none;
-}
-
-div[class^="sheet-talent"] {
-  display: none;
-}
-input.sheet-ltcheck:checked ~ div.sheet-talent-lt,
-input.sheet-gtcheck:checked ~ div.sheet-talent-gt {
-  display: block;
-}
-
 input.sheet-inMainNum{
     text-align: right;
     border-width: 1px;
